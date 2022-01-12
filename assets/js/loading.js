@@ -1,11 +1,11 @@
-const social = [{squery:'discord', slink:"https://discord.com/invite/6xdB7ZvZ95", sname:"Discord", sicon:"assets/images/discord.png"},
-                {squery:'twitch', slink:"https://www.twitch.tv/catovr/", sname:"Twitch", sicon:"assets/images/twitch.png"},
-                {squery:'tiktok', slink:"https://www.tiktok.com/@catovrc", sname:"TikTok", sicon:"assets/images/tiktok.png"},
-                {squery:'instagram', slink:"https://www.instagram.com/furry_cato/", sname:"Instagram", sicon:"assets/images/instagram.png"},
-                {squery:'melody', slink:"https://melodybot.ga/", sname:"Melody Bot", sicon:"assets/images/melody.png"},
-                {squery:'donation', slink:"https://streamlabs.com/catovr/tip", sname:"Streamlabs", sicon:"assets/images/streamlabs.png"}];
+const social = [{squery:'discord', slink:"https://discord.com/invite/6xdB7ZvZ95", sname:"Discord", sicon:"discord.png", sbackground:"discord-bg.jpg"},
+                {squery:'twitch', slink:"https://www.twitch.tv/catovr/", sname:"Twitch", sicon:"twitch.png", sbackground:null},
+                {squery:'tiktok', slink:"https://www.tiktok.com/@catovrc", sname:"TikTok", sicon:"tiktok.png", sbackground:null},
+                {squery:'instagram', slink:"https://www.instagram.com/furry_cato/", sname:"Instagram", sicon:"instagram.png", sbackground:null},
+                {squery:'melody', slink:"https://melodybot.ga/", sname:"Melody Bot", sicon:"melody.png", sbackground:null},
+                {squery:'donation', slink:"https://streamlabs.com/catovr/tip", sname:"Streamlabs", sicon:"streamlabs.png", sbackground:null}];
 const url = (new URL(document.location));
-const duration = 3500;
+const duration = 350000;
 window.addEventListener('load', () => {
 
     var query = url.searchParams.get('q');
@@ -17,7 +17,10 @@ window.addEventListener('load', () => {
                 const message = "Redirecting to "+content.sname+"...";
                 document.getElementById('loading-pbvalue').innerHTML = message;
                 document.title = message;
-                document.getElementById('socialicon').src = content.sicon;
+                document.getElementById('socialicon').src = "assets/images/"+content.sicon;
+                if(content.sbackground != null){
+                    document.body.style.background = "url('assets/images/"+content.sbackground+"')"; 
+                }
                 succes = true;
                 setTimeout(function(){
                     document.location.href = content.slink;

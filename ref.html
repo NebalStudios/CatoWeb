@@ -24,14 +24,37 @@
       font-family: 'Quicksand', sans-serif;
       background-image: url('assets/images/bg.jpg');  
     }
-
+      
+    @media only screen and (min-width: 1410px){
+      #loading-container{
+         left: 44rem;
+      }
+    }
+      
+    @media only screen and (max-width: 1409px ){
+      #loading-container{
+         left: 50%;
+      }
+    }
+      
+    @media only screen and (min-width: 900px){
+      #loading-container{
+         top: 50%;
+      }
+    }
+      
+    @media only screen and (max-height: 899px ){
+      #loading-container{
+         top: 27rem;
+      }
+    }
+      
     #loading-container{
       position: absolute;
+      margin-top: 10rem; 
       background-color: #18191C;
       width: 20rem;
       height: 26rem;
-      top: 50%;
-      left: 50%;
       margin: -13rem 0 0 -10rem;
       border-radius: 1rem;
       justify-content: center;
