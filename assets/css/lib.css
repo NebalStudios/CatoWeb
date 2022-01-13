@@ -74,6 +74,10 @@
     flex-direction: column;
 }
 
+.flex-row {
+    flex-direction: row;
+}
+
 .w-full {
     width: 100%;
 }
