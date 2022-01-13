@@ -54,6 +54,7 @@ footer a{
 }
 
 .wrapper{
+    position: fixed;
     background-color: rgba(35,35,35,0.75);
     border-radius: 2.5rem;
 }

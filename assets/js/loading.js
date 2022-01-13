@@ -5,7 +5,7 @@ const social = [{squery:'discord', slink:"https://discord.com/invite/6xdB7ZvZ95"
                 {squery:'melody', slink:"https://melodybot.ga/", sname:"Melody Bot", sicon:"melody.png", sbackground:null},
                 {squery:'donation', slink:"https://streamlabs.com/catovr/tip", sname:"Streamlabs", sicon:"streamlabs.png", sbackground:null}];
 const url = (new URL(document.location));
-const duration = 3500;
+const duration = 350000;
 window.addEventListener('load', () => {
 
     var query = url.searchParams.get('q');
