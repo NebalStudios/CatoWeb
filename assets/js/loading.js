@@ -3,7 +3,8 @@ const social = [{squery:'discord', slink:"https://discord.com/invite/6xdB7ZvZ95"
                 {squery:'tiktok', slink:"https://www.tiktok.com/@catovrc", sname:"TikTok", sicon:"tiktok.png", sbackground:null},
                 {squery:'instagram', slink:"https://www.instagram.com/furry_cato/", sname:"Instagram", sicon:"instagram.png", sbackground:null},
                 {squery:'melody', slink:"https://melodybot.ga/", sname:"Melody Bot", sicon:"melody.png", sbackground:null},
-                {squery:'donation', slink:"https://streamlabs.com/catovr/tip", sname:"Streamlabs", sicon:"streamlabs.png", sbackground:null}];
+                {squery:'donation', slink:"https://streamlabs.com/catovr/tip", sname:"Streamlabs", sicon:"streamlabs.png", sbackground:null},
+                {squery:'commissions', slink:"https://catovr.ga/commissions", sname:"Commissions", sicon:"userpic.png", sbackground:null}];
 const url = (new URL(document.location));
 const duration = 3500;
 window.addEventListener('load', () => {

@@ -35,7 +35,7 @@
 body{
     background: rgb(30,3,45);
     background: linear-gradient(0deg, rgba(30,3,45,1) 14%, rgba(1,5,55,1) 100%);
-    background-attachment: fixed;
+  
     
 }
 
