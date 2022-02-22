@@ -1,7 +1,16 @@
+
+var commissionsopen = 0;
+
 window.addEventListener('load', () => {
 
     document.getElementById("nojscript").classList.add("hidden");
     document.getElementById("content").classList.remove("hidden");
+
+    if(commissionsopen > 0){
+        document.getElementById("commissionsstatus").innerHTML = ("Commissions: OPEN --- "+commissionsopen+" FREE SLOTS");
+    }else{
+        document.getElementById("commissionsstatus").innerHTML = ("Commissions: CLOSED");
+    }
     /*
 	var prefix = url.searchParams.get('p');
 

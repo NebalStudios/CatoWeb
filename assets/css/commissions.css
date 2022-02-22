@@ -34,29 +34,75 @@
 
 body{
     background: rgb(30,3,45);
-    background: linear-gradient(0deg, rgba(30,3,45,1) 14%, rgba(1,5,55,1) 100%);
-  
-    
+    background: url("../images/commissions/stars.webp"), linear-gradient(0deg, rgba(30,3,45,1) 45%, rgba(1,5,55,1) 100%);
+    background-repeat: repeat;
+    background-size: 125px;
 }
-
 /* Large screens */
 @media only screen and (min-width: 1px){
-   main{
-       width: 1300px;
-       height: 200vh;
-       background-color: rgba(0, 0, 0, 0.3);
-       margin: 3em auto 3em auto;
-       box-shadow: 0px 0px 300px black;
-       border-radius: var(--main-border-radius);
-   }
+    main{
+        width: 1300px;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin: 3em auto 3em auto;
+        box-shadow: 0px 0px 400px black;
+        border-radius: var(--main-border-radius);
+        padding-bottom: 3em;
+    }
 
-   main #banner{
+    main #banner{
+            width: 100%;
+            border-top-left-radius: var(--main-border-radius);
+            border-top-right-radius: var(--main-border-radius);
+    }
+
+    main #commissionsstatus{
+        font-size: xxx-large;
+        background-color: gray;
+        text-align: center;
+        margin-top: 1em;
+        margin: 1.5em 20% 1.5em 20%;
+        border-radius: 1em;
+    }
+
+    main #aboutme{
+        font-size: x-large;
+        background-color: rgba(54, 67, 77, 0.507);
+        min-width: 50%;
+        padding: 1em;
+        border-radius: 50px;
+        margin: 0 0 0 2em;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    main hr{
+        font-size: x-large;
+        margin: 2em 10% 2em 10%;
+        color: #24003C;
+    }
+
+    main #wrapper1{
+        display: flex;
+    }
+
+    main #reftoprice{
         width: 100%;
-        border-top-left-radius: var(--main-border-radius);
-        border-top-right-radius: var(--main-border-radius);
-   }
+        align-items: center;
+        justify-content: center; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #reftoprice img{
+        width: 40%;
+        height: 40%;
+        border-radius: 20px;
+    }
 }
 
 .hidden{
     display: none !important;
+}
+
+.pink{
+    color: palevioletred;
 }
