@@ -34,14 +34,20 @@ window.addEventListener('load', () => {
     */
 });
 
-const contact = [{stag:'discord', scontent:"Cato#2907", sname:"Discord Tag"},
-                {stag:'telegram', scontent:"@Catoooooooooo", sname:"Telegram Tag"}];
-function showcontact(tag){
+const contact = [{stag:'discord', scontent:"Cato#2907", sname:"Discord Tag", sicon:"discord.png"},
+                {stag:'telegram', scontent:"@Catoooooooooo", sname:"Telegram Tag", sicon:"telegram.png"}];
+function showpopup(tag){
     if(tag != null){
         contact.forEach(data => {
             if(data.stag == tag){
                 console.log(data.scontent);
+                document.getElementById("popup").classList.remove("hidden");
+                document.getElementById('popup-icon').src = "assets/images/"+data.sicon;
             }
         });
     }
+}
+
+function hidepopup(){ 
+    document.getElementById("popup").classList.add("hidden");
 }
