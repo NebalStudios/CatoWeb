@@ -1,5 +1,5 @@
 
-var commissionsopen = 1;
+var commissionsopen = 0;
 
 window.addEventListener('load', () => {
 
@@ -7,9 +7,9 @@ window.addEventListener('load', () => {
     document.getElementById("content").classList.remove("hidden");
 
     if(commissionsopen > 0){
-        document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="lime_text">OPEN</span> &emsp; '+commissionsopen+' SLOTS OPEN ');
+        document.getElementById("commissionsstatus").innerHTML = ('Commissions: OPEN> &emsp; '+commissionsopen+' SLOTS OPEN ');
     }else{
-        document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="red_text">CLOSED</span> ');
+        document.getElementById("commissionsstatus").innerHTML = ('Commissions: CLOSED ');
     }
     /*
 	var prefix = url.searchParams.get('p');
