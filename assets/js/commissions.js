@@ -4,12 +4,12 @@ var commissionsopen = 0;
 window.addEventListener('load', () => {
 
     document.getElementById("nojscript").classList.add("hidden");
-    document.getElementById("content").classList.remove("hidden");
+    document.getElementById("webpage").classList.remove("hidden");
 
     if(commissionsopen > 0){
-        document.getElementById("commissionsstatus").innerHTML = ('Commissions: OPEN &emsp; '+commissionsopen+' FREE SLOTS ');
+        document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="text-lime">OPEN</span> &emsp; '+commissionsopen+' FREE SLOTS ');
     }else{
-        document.getElementById("commissionsstatus").innerHTML = ('Commissions: CLOSED ');
+        document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="text-red">CLOSED</span>');
     }
     /*
 	var prefix = url.searchParams.get('p');
@@ -33,3 +33,15 @@ window.addEventListener('load', () => {
     }
     */
 });
+
+const contact = [{stag:'discord', scontent:"Cato#2907", sname:"Discord Tag"},
+                {stag:'telegram', scontent:"@Catoooooooooo", sname:"Telegram Tag"}];
+function showcontact(tag){
+    if(tag != null){
+        contact.forEach(data => {
+            if(data.stag == tag){
+                console.log(data.scontent);
+            }
+        });
+    }
+}

@@ -5,10 +5,6 @@
     color: white;
 }
 
-:root{
-    --main-border-radius: 3em;
-}
-
 #nojscript{
     display: flex;
     align-items: center;
@@ -38,40 +34,26 @@ body{
     background-repeat: repeat;
     background-size: 125px;
 }
+
+#contactbuttons{
+    border-radius: 50%;
+}
+
 /* Large screens */
 @media only screen and (min-width: 1px){
+
+    :root{
+        --main-border-radius: 3em;
+        --default-margin: 1.5em;
+    }
+
     main{
-        width: 1300px;
+        width: 1400px;
         background-color: rgba(0, 0, 0, 0.6);
         margin: 3em auto 3em auto;
         box-shadow: 0px 0px 400px black;
         border-radius: var(--main-border-radius);
         padding-bottom: 3em;
-    }
-
-    main #banner{
-            width: 100%;
-            border-top-left-radius: var(--main-border-radius);
-            border-top-right-radius: var(--main-border-radius);
-    }
-
-    main #commissionsstatus{
-        font-size: xxx-large;
-        background-color: gray;
-        text-align: center;
-        margin-top: 1em;
-        margin: 1.5em 20% 1.5em 20%;
-        border-radius: 1em;
-    }
-
-    main #aboutme{
-        font-size: x-large;
-        background-color: rgba(54, 67, 77, 0.507);
-        min-width: 50%;
-        padding: 1em;
-        border-radius: 50px;
-        margin: 0 0 0 2em;
-        box-shadow: 0px 0px 10px black;
     }
 
     main hr{
@@ -80,22 +62,52 @@ body{
         color: #24003C;
     }
 
-    main #wrapper1{
-        display: flex;
+    main #banner{
+        width: 100%;
+        border-top-left-radius: var(--main-border-radius);
+        border-top-right-radius: var(--main-border-radius);
+    }
+    main #commissionsstatus{
+        font-size: xxx-large;
+        background-color: gray;
+        text-align: center;
+        margin-top: 1em;
+        margin: var(--default-margin) 20% var(--default-margin) 20%;
+        border-radius: 1em;
+    }
+    main .wrapper{
+        width: 100%;
     }
 
-    main #reftoprice{
+    main #wrapper1{ 
+        display: flex;
+        margin-bottom: 3em;
+    }
+    main #wrapper1 #aboutme{
+        font-size: x-large;
+        background-color: rgba(54, 67, 77, 0.507);
+        min-width: 50%;
+        padding: 1em;
+        border-radius: 50px;
+        margin: 0 0 0 2em;
+        box-shadow: 0px 0px 10px black;
+    }
+    main #wrapper1 #reftoprice{
         width: 100%;
+        height: 100%;
         align-items: center;
         justify-content: center; 
-        display: flex;
-        flex-direction: column;
+        margin: auto;
+    }
+    main #wrapper1 #reftoprice img{
+        width: 43%;
+        height: 43%;
+        border-radius: 20px;
+        margin: 4.5% 29.5% 4.5% 29.5%;
     }
 
-    main #reftoprice img{
-        width: 40%;
-        height: 40%;
-        border-radius: 20px;
+    main #wrapper2 {
+        background-color: aqua;
     }
 }
 
@@ -103,6 +115,18 @@ body{
     display: none !important;
 }
 
-.pink{
+.text-pink{
     color: palevioletred;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-red{
+    color: red;
+}
+
+.text-lime{
+    color: limegreen;
 }
