@@ -7,9 +7,9 @@ window.addEventListener('load', () => {
     document.getElementById("content").classList.remove("hidden");
 
     if(commissionsopen > 0){
-        document.getElementById("commissionsstatus").innerHTML = (<p> Commissions: <span class="lime_text">OPEN</span> &emsp; "+commissionsopen+" SLOTS OPEN </p>);
+        document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="lime_text">OPEN</span> &emsp; "+commissionsopen+" SLOTS OPEN ');
     }else{
-        document.getElementById("commissionsstatus").innerHTML = (<p> Commissions: <span class="red_text">CLOSED</span> </p>);
+        document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="red_text">CLOSED</span> ');
     }
     /*
 	var prefix = url.searchParams.get('p');
