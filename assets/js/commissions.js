@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
     document.getElementById("content").classList.remove("hidden");
 
     if(commissionsopen > 0){
-        document.getElementById("commissionsstatus").innerHTML = ('Commissions: OPEN> &emsp; '+commissionsopen+' SLOTS OPEN ');
+        document.getElementById("commissionsstatus").innerHTML = ('Commissions: OPEN &emsp; '+commissionsopen+' SLOTS OPEN ');
     }else{
         document.getElementById("commissionsstatus").innerHTML = ('Commissions: CLOSED ');
     }
