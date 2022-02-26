@@ -28,11 +28,11 @@
 }
 
 .bg-darker-gray {
-    background-color: rgba(35,35,35);
+    background-color: rgb(35,35,35);
 }
 
 .bg-dark-gray {
-    background-color: rgba(62,62,62);
+    background-color: rgb(62,62,62);
 }
 
 .text-white{
@@ -59,6 +59,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .center{
     margin-left: auto;
     margin-right: auto;
@@ -68,7 +69,6 @@
 .mb-2 {
     margin-bottom: .5rem;
 }
-
 
 .flex-col {
     flex-direction: column;
@@ -90,6 +90,23 @@
     border-radius: .7rem;
 }
 
+
+.opacity-100 {
+    opacity: 1;
+}
+
 .opacity-75 {
     opacity: .75;
+}
+
+.opacity-50 {
+    opacity: .50;
+}
+
+.opacity-25 {
+    opacity: .25;
+}
+
+.opacity-0 {
+    opacity: .0;
 }

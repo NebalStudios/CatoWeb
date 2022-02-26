@@ -11,9 +11,11 @@
 
 body {
     background: rgb(30,3,45);
-    background: url("../images/bg.webp"), linear-gradient(100deg, rgba(30,3,45,1) 45%, rgba(1,5,55,1) 100%);
-    background-repeat: no-repeat;
-    background-size: 2000px;
+    background: url("../images/linkpage/stars.webp"), linear-gradient(0deg, rgba(30,3,45,1) 45%, rgba(1,5,55,1) 100%);
+    background-repeat: repeat;
+    background-size: 1800px;
+    margin: 0;
+    padding: 0;
 }
 
 footer p{
@@ -55,14 +57,15 @@ footer a{
 
 .wrapper{
     position: fixed;
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0, 0, 0, 0.45);
     border-radius: 2.5rem;
 }
 
 @media only screen and (min-width: 800px){
     .wrapper{
         margin-top: 3rem;
-        margin-left: 10rem;
+        margin-left: 50rem;
+        margin-left: 50rem;
         max-height: 40rem;
         max-width: 30rem;
     }

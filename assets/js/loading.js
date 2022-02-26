@@ -1,10 +1,10 @@
-const social = [{squery:'discord', slink:"https://discord.com/invite/6xdB7ZvZ95", sname:"Discord", sicon:"discord.png", sbackground:"discord-bg.jpg"},
-                {squery:'twitch', slink:"https://www.twitch.tv/catovr/", sname:"Twitch", sicon:"twitch.png", sbackground:null},
-                {squery:'tiktok', slink:"https://www.tiktok.com/@catovrc", sname:"TikTok", sicon:"tiktok.png", sbackground:null},
-                {squery:'instagram', slink:"https://www.instagram.com/furry_cato/", sname:"Instagram", sicon:"instagram.png", sbackground:null},
-                {squery:'melody', slink:"https://melodybot.ga/", sname:"Melody Bot", sicon:"melody.png", sbackground:null},
-                {squery:'donation', slink:"https://streamlabs.com/catovr/tip", sname:"Streamlabs", sicon:"streamlabs.png", sbackground:null},
-                {squery:'commissions', slink:"https://catovr.ga/commissions", sname:"Commissions", sicon:"userpic.png", sbackground:null}];
+const social = [{squery:'discord', slink:"https://discord.com/invite/6xdB7ZvZ95", sname:"Discord", sicon:"discord.webp", sbackground:"discord-bg.jpg"},
+                {squery:'twitch', slink:"https://www.twitch.tv/catovr/", sname:"Twitch", sicon:"twitch.webp", sbackground:null},
+                {squery:'tiktok', slink:"https://www.tiktok.com/@catovrc", sname:"TikTok", sicon:"tiktok.webp", sbackground:null},
+                {squery:'instagram', slink:"https://www.instagram.com/furry_cato/", sname:"Instagram", sicon:"instagram.webp", sbackground:null},
+                {squery:'melody', slink:"https://melodybot.ga/", sname:"Melody Bot", sicon:"melody.webp", sbackground:null},
+                {squery:'donation', slink:"https://streamlabs.com/catovr/tip", sname:"Streamlabs", sicon:"streamlabs.webp", sbackground:null},
+                {squery:'commissions', slink:"https://catovr.ga/commissions", sname:"Commissions", sicon:"commissions.webp", sbackground:null}];
 const url = (new URL(document.location));
 const duration = 3500;
 window.addEventListener('load', () => {
@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
                 const message = "Redirecting to "+content.sname+"...";
                 document.getElementById('loading-pbvalue').innerHTML = message;
                 document.title = message;
-                document.getElementById('socialicon').src = "assets/images/"+content.sicon;
+                document.getElementById('socialicon').src = "assets/images/reficon/"+content.sicon;
                 if(content.sbackground != null){
                     document.body.style.background = "url('assets/images/"+content.sbackground+"')"; 
                 }
