@@ -13,7 +13,7 @@ body {
     background: rgb(30,3,45);
     background: url("../images/bg.webp"), linear-gradient(0deg, rgba(30,3,45,1) 45%, rgba(1,5,55,1) 100%);
     background-repeat: repeat;
-    background-size: 125px;
+    background-size: 1800px;
 }
 
 footer p{
