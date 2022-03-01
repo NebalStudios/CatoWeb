@@ -11,25 +11,16 @@
 
 body {
     background: rgb(30,3,45);
-    background: url("../images/linkpage/stars.webp"), linear-gradient(0deg, rgba(30,3,45,1) 45%, rgba(1,5,55,1) 100%);
+    background: url("../images/commissions/stars.webp"), linear-gradient(0deg, rgba(30,3,45,1) 45%, rgba(1,5,55,1) 100%);
     background-repeat: repeat;
-    background-size: 1800px;
+    background-size: 200px;
     margin: 0;
     padding: 0;
 }
 
-footer p{
-    position: fixed;
-    bottom: 0;
-    right: 1rem; 
-    background-color: #23232e; 
-    padding: 0.5rem;
-    border-radius: 7px;
-}
-            
-footer a{
-    text-decoration: none;
-    color: aqua;
+main{
+    width: 100%;
+    height: 100%;
 }
 
 .wrapper img{
@@ -47,6 +38,8 @@ footer a{
 }
 
 .wrapper a{
+    display: flex;
+    flex-direction: row;
     text-decoration: none;
     color: antiquewhite;
     padding-left: 1.5rem; 
@@ -56,17 +49,47 @@ footer a{
 }
 
 .wrapper{
-    position: fixed;
     background-color: rgba(0, 0, 0, 0.45);
     border-radius: 2.5rem;
 }
 
-@media only screen and (min-width: 800px){
-    .wrapper{
-        margin-top: 3rem;
-        margin-left: 50rem;
-        margin-left: 50rem;
-        max-height: 40rem;
-        max-width: 30rem;
+@media only all and (max-width: 999px){
+    .grouppic{
+
+        display: none;
+    
     }
+    
+    .headtext{
+        margin: 4rem;
+        margin-left: 10%;
+        width: 80%;
+        margin-right: 10%;
+    }
+    
+}
+
+@media only all and (min-width: 1000px){
+    .wrapper{
+        position: absolute;
+        left: 15rem;
+        top: 15rem;
+        max-width: 100%;
+    }
+    .headtext{
+        position: absolute;
+        right: 4rem;
+        top: 4rem;
+        height: 15%;
+    }
+    .grouppic{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        max-height: 1000px;
+        max-width: 1000px;
+    }
+    
 }
