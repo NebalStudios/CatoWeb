@@ -1,5 +1,5 @@
 
-var commissionsopen = 0;
+var commissionsopen = 8;
 
 window.addEventListener('load', () => {
 
