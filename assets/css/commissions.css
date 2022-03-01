@@ -133,10 +133,10 @@ body{
         margin: auto;
     }
     main #wrapper1 #reftoprice img{
-        width: 43%;
-        height: 43%;
+        width: 83%;
+        height: 83%;
         border-radius: 20px;
-        margin: 4.5% 29.5% 4.5% 29.5%;
+        margin: 4.5% 29.5% 4.5% 8.5%;
     }
 
     main #wrapper2 {
