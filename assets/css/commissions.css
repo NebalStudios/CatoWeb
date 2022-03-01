@@ -119,7 +119,7 @@ body{
     main #wrapper1 #aboutme{
         font-size: x-large;
         background-color: rgba(54, 67, 77, 0.507);
-        min-width: 50%;
+        min-width: 60%;
         padding: 1em;
         border-radius: 50px;
         margin: 0 0 0 2em;
