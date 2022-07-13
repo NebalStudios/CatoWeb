@@ -4,6 +4,9 @@
     font-family: "Lucida Console", "Courier New", monospace;
     color: white;
 }
+element {
+  width: 250px;
+}
 
 #nojscript{
     display: flex;
