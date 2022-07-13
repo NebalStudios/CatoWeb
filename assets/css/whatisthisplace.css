@@ -16,8 +16,8 @@
 }
 
 #nojscript img{
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 200px;
+    min-height: 200px;
     width: 10vw;
     height: 10vw;
 }
