@@ -2,7 +2,7 @@
   background-color: rgba(10,10,10,0.3);
   font-size: 0%;
   cursor: pointer;
-  color: orange;
+  color: purple;
   border-color: #ff9800;
   border-radius: 50px;
  transition: transform 0.3s, font-size 0.5s;
@@ -10,7 +10,7 @@
 }
 
 .button:hover{
-  background-color: orange;
+  background-color: purple;
   color: black;
   font-size: 200%;
   transform: scale(1.01);
