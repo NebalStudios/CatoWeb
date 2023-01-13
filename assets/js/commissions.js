@@ -6,9 +6,9 @@ window.addEventListener('load', () => {
     document.getElementById("nojscript").classList.add("hidden");
     document.getElementById("webpage").classList.remove("hidden");
 
-    if(99 > commissionsopen > 0){
+    if(commissionsopen < 99 || commissionsopen > 0){
         document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="text-lime">OPEN</span> &emsp; '+commissionsopen+' FREE SLOTS ');
-    }else if(commissionsopen < 99){
+    }else if(commissionsopen > 99){
 	    document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="text-lime">OPEN</span>');
     }else{
         document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="text-red">CLOSED</span>');
