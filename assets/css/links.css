@@ -2,16 +2,23 @@
   background-color: rgba(10,10,10,0.3);
   font-size: 0%;
   cursor: pointer;
-  border-color: #ff9800;
   color: orange;
-  border-radius: 20px;
+  border-color: #ff9800;
+  border-radius: 50px;
+ transition: transform 0.3s, font-size 0.5s;
+
 }
+
 .button:hover{
   background-color: orange;
   color: black;
-  font-size: 250%
+  font-size: 200%;
+  transform: scale(1.01);
+  transition: transform 0.3s, font-size 0.3s;
+  padding-top: 6px;
 }
 .img{
   height: 100px;
   width: 100px;
+  border-radius: 50%;
 }
