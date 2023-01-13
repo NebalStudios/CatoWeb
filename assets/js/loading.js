@@ -15,7 +15,7 @@ window.addEventListener('load', () => {
         query = query.toLowerCase();
         social.forEach(content => {
             if(content.squery == query){
-                const message = "Redirecting to "+content.sname+"...";
+                const message = "Redirecting to " + content.sname + "...";
                 document.getElementById('loading-pbvalue').innerHTML = message;
                 document.title = message;
                 document.getElementById('socialicon').src = "assets/images/reficon/"+content.sicon;
