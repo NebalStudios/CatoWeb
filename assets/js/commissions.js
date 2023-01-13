@@ -1,5 +1,5 @@
 
-var commissionsopen = 5;
+var commissionsopen = 100;
 
 window.addEventListener('load', () => {
 
@@ -8,6 +8,8 @@ window.addEventListener('load', () => {
 
     if(commissionsopen > 0){
         document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="text-lime">OPEN</span> &emsp; '+commissionsopen+' FREE SLOTS ');
+    }else if(commissionsopen < 99){
+	    document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="text-lime">OPEN</span>');
     }else{
         document.getElementById("commissionsstatus").innerHTML = ('Commissions: <span class="text-red">CLOSED</span>');
     }
