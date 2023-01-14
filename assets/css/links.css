@@ -1,23 +1,26 @@
 .button {
-  background-color: rgba(10,10,10,0.3);
+  background-color: rgba(10,10,10,0.5);
   font-size: 0%;
   cursor: pointer;
   color: purple;
   border-color: purple;
   border-radius: 50px;
- transition: transform 0.3s, font-size 0.4s;
-
+  transition: transform 0.4, font-size 0.4s;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
 }
 
 .button:hover{
-  background-color: purple;
-  color: black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: purple;
   font-size: 200%;
-  transform: scale(1.01);
-  transition: transform 0.3s, font-size 0.3s;
+  transform: scale(1.1);
+  transition: transform 0.4s, font-size 0.4s;
   padding-top: 6px;
 }
 .img{
+  padding-right: 1%;
   height: 100px;
   width: 100px;
   border-radius: 50%;
