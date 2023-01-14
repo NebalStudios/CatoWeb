@@ -8,7 +8,7 @@ const social = [{squery:'discord', slink:"https://discord.com/invite/6xdB7ZvZ95"
                 {squery:'pronounspage', slink:"https://pronouns.page/@CatoVR", sname:"Pronounspage", sicon:"pronounspage.webp", sbackground:null},
                 {squery:'twitter', slink:"https://twitter.com/CatoVR", sname:"Twitter", sicon:"twitter.webp", sbackground:null}];
 const url = (new URL(document.location));
-const duration = 3500;
+const duration = 1500;
 window.addEventListener('load', () => {
 
     var query = url.searchParams.get('q');
