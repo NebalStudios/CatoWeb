@@ -21,9 +21,9 @@ window.addEventListener('load', () => {
                 const message = "Redirecting to " + content.sname + "...";
                 document.getElementById('loading-pbvalue').innerHTML = message;
                 document.title = message;
-                document.getElementById('socialicon').src = "assets/images/reficon/"+content.sicon;
+                document.getElementById('socialicon').src = "assets/images/reficon/" + content.sicon;
                 if(content.sbackground != null){
-                    document.body.style.background = "url('assets/images/"+content.sbackground+"')"; 
+                    document.body.style.background = "url('assets/images/" + content.sbackground + "')"; 
                 }
                 succes = true;
                 setTimeout(function(){
