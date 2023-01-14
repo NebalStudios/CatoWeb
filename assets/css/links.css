@@ -1,3 +1,9 @@
+/*button div*/
+.btn{
+  padding-bottom: 5px;
+}
+
+/*button element*/
 .button {
   background-color: rgba(10,10,10,0.5);
   font-size: 0%;
