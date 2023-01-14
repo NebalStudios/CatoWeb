@@ -11,7 +11,7 @@
   color: purple;
   border-color: purple;
   border-radius: 50px;
-  transition: transform 0.4, font-size 0.4s;
+  transition: transform 0.4s, font-size 0.4s;
   align-items: center;
   flex-direction: row;
   display: flex;
