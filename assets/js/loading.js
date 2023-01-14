@@ -6,6 +6,7 @@ const social = [{squery:'discord', slink:"https://discord.com/invite/6xdB7ZvZ95"
                 {squery:'donation', slink:"https://streamlabs.com/catovr/tip", sname:"Streamlabs", sicon:"streamlabs.webp", sbackground:null},
                 {squery:'commissions', slink:"https://catovr.ga/commissions", sname:"Commissions", sicon:"commissions.webp", sbackground:null},
                 {squery:'pronounspage', slink:"https://pronouns.page/@CatoVR", sname:"Pronounspage", sicon:"pronounspage.webp", sbackground:null},
+                {squery:'pettingtown', slink:"https://petting.town/cato", sname:"Pettingtown", sicon:"pettingtown.webp", sbackground:null},
                 {squery:'twitter', slink:"https://twitter.com/CatoVR", sname:"Twitter", sicon:"twitter.webp", sbackground:null}];
 const url = (new URL(document.location));
 const duration = 1500;
