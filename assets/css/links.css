@@ -30,6 +30,7 @@
   height: 90px;
   width: 90px;
   border-radius: 50%;
+  transform: scale(90%);
 }
 body{
     background: url("../images/commissions/stars.webp"), linear-gradient(0deg, rgba(30,3,45,1) 45%, rgba(1,5,55,1) 100%);
