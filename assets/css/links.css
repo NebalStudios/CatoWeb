@@ -41,3 +41,14 @@ html{
   height: 100%;
   width: 100%;
 }
+
+@media only screen and (max-width: 600px){
+.button{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: purple;
+  font-size: 200%;
+  transform: scale(1.1);
+  transition: transform 0.4s, font-size 0.4s;
+  padding-top: 6px;
+}
+}
