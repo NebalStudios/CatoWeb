@@ -4,10 +4,6 @@
 }
 
 /*button element*/
-html, body{
-    height: -webkit-fill-available;
-}
-
 .button {
   background-color: rgba(10,10,10,0.5);
   font-size: 0%;
@@ -41,11 +37,14 @@ body{
     background-repeat: repeat;
     background-size: 200px;
     padding-left: 45%;
+    overflow: scroll;
+    scrollbar-width: none
 }
 html{
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 @media (pointer: coarse){
