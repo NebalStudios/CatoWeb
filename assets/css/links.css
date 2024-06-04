@@ -4,6 +4,10 @@
 }
 
 /*button element*/
+html, body{
+    height: -webkit-fill-available;
+}
+
 .button {
   background-color: rgba(10,10,10,0.5);
   font-size: 0%;
@@ -39,7 +43,6 @@ body{
     padding-left: 45%;
 }
 html{
-  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
