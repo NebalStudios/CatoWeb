@@ -47,7 +47,8 @@ html{
 
 @media (pointer: coarse){
   body{
-padding-left: initial
+padding-left: initial;
+align-self: center;
   }
 .button {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
